@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Open Websites</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#111;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    
+}
+
+.container{
+    width:350px;
+}
+
+.box{
+    background:linear-gradient(45deg,#ff6600,#ff0000);
+    color:white;
+    margin-bottom:15px;
+    padding:18px;
+    border-radius:12px;
+    text-align:center;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.box:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 15px orange;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="box" onclick="openSite('https://www.google.com')">
+        1. Google
+    </div>
+
+    <div class="box" onclick="openSite('https://www.flipkart.com')">
+        2. Flipkart
+    </div>
+
+    <div class="box" onclick="openSite('https://www.amazon.in')">
+        3. Amazon
+    </div>
+
+    <div class="box" onclick="openSite('https://www.youtube.com')">
+        4. YouTube
+    </div>
+
+    <div class="box" onclick="openSite('https://www.google.com/chrome/')">
+        5. Chrome
+    </div>
+    
+
+</div>
+
+<script>
+function openSite(url){
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
